@@ -11,6 +11,17 @@ Notification.new("warning", notifHeading, "Please execute when in game, not in l
 return
 end
 
+local table1 = {}
+
+local remote = game:GetService("ReplicatedStorage").Bricks.PreRunShop
+remote:FireServer(table1)
+task.wait(1)
+local table1 = {}
+
+local remote = game:GetService("ReplicatedStorage").Bricks.PreRunShop
+remote:FireServer(table1)
+task.wait(2)
+
 local AutoSkipCoro = coroutine.create(function()
         while true do
             task.wait()
